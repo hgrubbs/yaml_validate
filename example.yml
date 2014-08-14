@@ -1,0 +1,10 @@
+---
+persons:
+  -
+    firstname: trillian
+    lastname: mcmillan
+    president: zaphod beeblebrox
+  -
+    firstname: arthur
+    lastname: dent
+    president: zaphod beeblebrox
