@@ -4,7 +4,7 @@ yaml_validate.py validates and PrettyPrints YAML.
 
 jinja_render.py validates and renders jinja2 templates with variables provided by YAML.
 
-# Example usage: #
+### Example usage: ###
 
 Validate YAML:
 <pre><code>
