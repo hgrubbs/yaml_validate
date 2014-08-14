@@ -35,7 +35,7 @@ except Exception as e:
 try:
   parsed_yaml = yaml.load(unparsed_yaml)
 except Exception as e:
-  print("Failed to parse %s!" % (input_file))
+  print("Failed to parse %s!" % (input_yaml))
   print("Error: %s" % (e))
   sys.exit(1)
 
