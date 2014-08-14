@@ -9,7 +9,13 @@ jinja_render.py validates and renders jinja2 templates with variables provided b
 Validate YAML:
 <pre><code>
 # ./yaml_validate.py example.yml 
-{'persons': [{'firstname': 'trillian',
+{'other_persons': {'persons': [{'firstname': 'dirk',
+                                'lastname': 'gently',
+                                'president': 'figment of his imagination'},
+                               {'firstname': 'korben',
+                                'lastname': 'dallas',
+                                'president': 'lindberg'}]},
+ 'persons': [{'firstname': 'trillian',
               'lastname': 'mcmillan',
               'president': 'zaphod beeblebrox'},
              {'firstname': 'arthur',
@@ -20,8 +26,8 @@ Validate YAML:
 Render Jinja2 template:
 <pre><code>
 # ./jinja_render.py example.yml example.j2 
-People:
 
+People:
 
   First name: trillian
   Last name : mcmillan
@@ -31,4 +37,20 @@ People:
   Last name : dent
   President : zaphod beeblebrox
 
+</code></pre>
+
+Render Jinja2 template passing in *other\_persons* as the top-level variable.
+
+<pre><code>
+# ./jinja_render.py example.yml example.j2 other_persons
+
+People:
+
+  First name: dirk
+  Last name : gently
+  President : figment of his imagination
+
+  First name: korben
+  Last name : dallas
+  President : lindberg
 </code></pre>

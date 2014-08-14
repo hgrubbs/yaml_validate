@@ -8,3 +8,14 @@ persons:
     firstname: arthur
     lastname: dent
     president: zaphod beeblebrox
+
+other_persons:
+  persons:
+    -
+      firstname: dirk
+      lastname: gently
+      president: figment of his imagination
+    -
+      firstname: korben
+      lastname: dallas
+      president: lindberg
