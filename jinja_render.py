@@ -47,6 +47,6 @@ try:
   j2_template = Template(j2_raw_template)
   print(j2_template.render(parsed_yaml))
 except Exception as e:
-  sys.stderr.write("Failed to parse %s" % (input_jinja))
-  sys.stderr.write("Error: %s" % (e))
+  sys.stderr.write("Failed to parse %s\n" % (input_jinja))
+  sys.stderr.write("Error: %s\n" % (e))
   sys.exit(1)
