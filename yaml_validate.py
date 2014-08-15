@@ -10,7 +10,7 @@ except Exception as e:
   print("Error: %s" % (e))
   sys.exit(1)
 
-if len(sys.argv) < 1:
+if len(sys.argv) < 2:
   print("Usage: yaml_validate <YAML file>")
   sys.exit(1)
 
