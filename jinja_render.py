@@ -13,15 +13,11 @@ except Exception as e:
   sys.exit(1)
 
 if len(sys.argv) < 3:
-  print("Usage: jinja_render <YAML file> <Jinja2 file> <YAML top-level variable>")
+  print("Usage: %s <YAML file> <Jinja2 file>" % (sys.argv[0]))
   sys.exit(1)
 
 input_yaml= sys.argv[1]
 input_jinja = sys.argv[2]
-if len(sys.argv) == 4:
-  top_level_key = sys.argv[3]
-else:
-  top_level_key = None
 
 # read yaml file
 try:
@@ -38,16 +34,6 @@ except Exception as e:
   print("Failed to parse %s!" % (input_yaml))
   print("Error: %s" % (e))
   sys.exit(1)
-
-# assign top-level key if provided
-if top_level_key is not None:
-  try:
-    parsed_yaml = parsed_yaml[top_level_key]
-  except Exception as e:
-    print("Failed to assign top-level-key %s" % (top_level_key))
-    print("Error: %s" % (e))
-    sys.exit(1)
-    
 
 # read jinja2 template
 try:

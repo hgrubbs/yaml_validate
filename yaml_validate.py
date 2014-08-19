@@ -11,7 +11,7 @@ except Exception as e:
   sys.exit(1)
 
 if len(sys.argv) < 2:
-  print("Usage: yaml_validate <YAML file>")
+  print("Usage: %s <YAML file>" % (sys.argv[0]))
   sys.exit(1)
 
 input_file = sys.argv[1]
