@@ -9,13 +9,7 @@ jinja_render.py validates and renders jinja2 templates with variables provided b
 Validate YAML:
 <pre><code>
 # ./yaml_validate.py example.yml 
-{'other_persons': {'persons': [{'firstname': 'dirk',
-                                'lastname': 'gently',
-                                'president': 'figment of his imagination'},
-                               {'firstname': 'korben',
-                                'lastname': 'dallas',
-                                'president': 'lindberg'}]},
- 'persons': [{'firstname': 'trillian',
+{'persons': [{'firstname': 'trillian',
               'lastname': 'mcmillan',
               'president': 'zaphod beeblebrox'},
              {'firstname': 'arthur',
