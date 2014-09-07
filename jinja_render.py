@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # Short program to validate and render Jinja2 templates with variables from a YAML file
 # Supports sending a specific keys worth of data as top level variable to Jinja2
+# by hgrubbs@grubbslab.org
 
 import sys
 

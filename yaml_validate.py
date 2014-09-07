@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Short program to validate and prettyprint parsed YAML, by Hunter Grubbs <hunter.grubbs@gmail.com>
+# Short program to validate and prettyprint parsed YAML, by hgrubbs@grubbslab.org
 
 import sys
 try:
